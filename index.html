@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Resume Builder & Reviewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 AI Resume Builder & Reviewer</h1>
+    <p>Use the form on the left to generate a new resume OR the form on the right to review a PDF.</p>
+
+    <div class="form-wrapper">
+        <form id="resumeForm">
+          <h2>1. Resume Generation</h2>
+          <label>Full Name:</label>
+          <input type="text" id="name" required>
+
+          <label>Education:</label>
+          <textarea id="education" required></textarea>
+
+          <label>Experience:</label>
+          <textarea id="experience"></textarea>
+
+          <label>Skills:</label>
+          <textarea id="skills" required></textarea>
+
+          <label>Projects:</label>
+          <textarea id="projects"></textarea>
+
+          <label>Target Job Description (for ATS Match Score):</label>
+          <textarea id="jobDescription"></textarea>
+          
+          <label>Career Goal (Objective):</label>
+          <textarea id="goal"></textarea>
+
+          <button type="submit">Generate & Review Resume</button>
+        </form>
+
+        <form id="reviewForm">
+          <h2>2. ATS Resume Review</h2>
+          <label>Upload Existing Resume (PDF Only):</label>
+          <input type="file" id="resumeFile" accept=".pdf" required>
+          
+          <label>Target Job Description (Required for ATS Score):</label>
+          <textarea id="reviewJobDescription" required></textarea>
+          
+          <div style="height: 180px;"></div>
+          
+          <button type="submit">Get ATS Review & Score</button>
+        </form>
+    </div>
+    
+    <div id="result" class="hidden">
+      <h2>Generated Resume / ATS Report</h2>
+      <pre id="resumeOutput"></pre>
+      <button id="downloadBtn" data-content="">Download Report as PDF</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

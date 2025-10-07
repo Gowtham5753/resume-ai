@@ -1,0 +1,97 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #eef2f7;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  /* Increased width to fit two columns */
+  width: 1000px; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #222;
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+
+p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* NEW: Two-column layout using Flexbox */
+.form-wrapper {
+    display: flex;
+    gap: 30px; /* Space between the two forms */
+}
+
+/* Apply styling to both form elements */
+#resumeForm, #reviewForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  /* Make both forms take equal width */
+  flex: 1; 
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+label {
+  font-weight: 500;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+/* Ensure buttons are at the bottom of the column */
+#resumeForm button, #reviewForm button {
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: auto; /* Pushes the button to the bottom */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#result {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f8faff;
+  border: 1px solid #d0e4ff;
+}
+
+#resumeOutput {
+    white-space: pre-wrap;
+}
+
+.hidden {
+  display: none;
+}
