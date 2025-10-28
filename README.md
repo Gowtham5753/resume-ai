@@ -4,6 +4,9 @@
 
 This is a full-stack web application designed to assist job seekers by generating professional, ATS-compliant resumes and analyzing existing PDF resumes against specific job descriptions. The application uses **Flask (Python)** for the backend API and the **Gemini API** for all generative and analytical tasks.
 
+## Live demo
+You can view my live demo of my resume ai application here https://app.netlify.com/projects/resumeart/overview
+
 ### Features
 
   * **Two-Column UI:** Separates the **Generation** feature (Form 1) from the **ATS Review** feature (Form 2) for a clean user experience.
